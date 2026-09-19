@@ -1,0 +1,12 @@
+using UnityEngine;
+
+public class collisiondetection : MonoBehaviour
+{
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Debug.Log("Player collided with the wall!");
+        }
+    }
+}
